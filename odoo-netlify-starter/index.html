@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Odoo Starter App</title>
+
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<body>
+  <header class="navbar">
+    <div class="container">
+      <h1>My Odoo App</h1>
+
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container">
+        <h2>Simple Odoo + Netlify Application</h2>
+        <p>
+          A basic frontend connected to a serverless backend and Odoo.
+        </p>
+
+        <button id="healthButton">
+          Test Backend
+        </button>
+
+        <p id="status"></p>
+      </div>
+    </section>
+
+    <section id="products" class="section">
+      <div class="container">
+        <h2>Products</h2>
+
+        <button id="loadProducts">
+          Load Products from Odoo
+        </button>
+
+        <div id="productsList" class="products">
+          <!-- Products will be inserted here -->
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2>Contact</h2>
+
+        <form id="contactForm">
+          <input
+            type="text"
+            id="name"
+            placeholder="Your name"
+            required
+          />
+
+          <input
+            type="email"
+            id="email"
+            placeholder="Your email"
+            required
+          />
+
+          <textarea
+            id="message"
+            placeholder="Your message"
+            required
+          ></textarea>
+
+          <button type="submit">
+            Send Message
+          </button>
+        </form>
+
+        <p id="formStatus"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 My Odoo App</p>
+    </div>
+  </footer>
+
+  <script src="/js/app.js"></script>
+</body>
+</html>
