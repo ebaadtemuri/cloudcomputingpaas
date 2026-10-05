@@ -1,0 +1,12 @@
+{
+  "name": "odoo-netlify-starter",
+  "version": "1.0.0",
+  "description": "Starter HTML JavaScript application connected to Odoo through Netlify Functions",
+  "main": "index.html",
+  "scripts": {
+    "dev": "netlify dev"
+  },
+  "dependencies": {
+    "netlify-cli": "latest"
+  }
+}
